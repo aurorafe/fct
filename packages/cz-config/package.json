@@ -1,0 +1,19 @@
+{
+  "name": "@aurorafe/cz-config",
+  "version": "1.0.0",
+  "description": "commit lint 的基础配置",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurorafe/ftc.git",
+    "directory": "packages/cz-config"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "lint": "eslint index.js"
+  }
+}
