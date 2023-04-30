@@ -1,0 +1,24 @@
+{
+  "name": "@aurorafe/tsconfig",
+  "version": "1.0.0",
+  "description": "aurorafe group ts base config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo ok"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurorafe/ftc.git",
+    "directory": "packages/tsconfig"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "config.json"
+  ]
+}
