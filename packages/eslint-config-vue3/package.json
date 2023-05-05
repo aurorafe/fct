@@ -1,0 +1,31 @@
+{
+  "name": "@aurorafe/eslint-config-vue",
+  "version": "1.0.0",
+  "description": "aurorafe eslint config presets with vue",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurorafe/ftc.git",
+    "directory": "packages/eslint-config-vue3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "dependencies": {
+    "@aurorafe/eslint-config-ts": "workspace:*",
+    "@vue/eslint-config-airbnb": "^7.0.0",
+    "eslint-define-config": "^1.21.0",
+    "eslint-plugin-vue": "^9.15.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.30.0"
+  }
+}
