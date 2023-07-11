@@ -1,6 +1,6 @@
 {
   "name": "@aurorafe/eslint-config-vue",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "aurorafe eslint config presets with vue",
   "license": "MIT",
   "main": "index.js",
