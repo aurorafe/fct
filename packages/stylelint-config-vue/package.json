@@ -1,6 +1,6 @@
 {
   "name": "@aurorafe/stylelint-config-vue",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "stylelint config for vue3",
   "license": "MIT",
   "main": "index.js",
