@@ -1,5 +1,5 @@
 const { defineConfig } = require('eslint-define-config');
-const base = require('@aurorafe/eslint-config-base/base');
+const base = require('@aurorafe/eslint-config-base/lib/base');
 
 module.exports = defineConfig({
   root: true,
