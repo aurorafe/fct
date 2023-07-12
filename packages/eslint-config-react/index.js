@@ -25,7 +25,8 @@ module.exports = defineConfig({
     'react/jsx-filename-extension': 'off', // 关闭 jsx 文件后缀检测 ['warn', { extensions: ['.js', '.jsx', '.tsx'] }]
     'react/no-array-index-key': 'warn',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    // 允许 hook 缺少依赖项
+    'react-hooks/exhaustive-deps': 'off',
     'react/require-default-props': 'off',
     'react/jsx-fragments': 'off',
     'react/jsx-wrap-multilines': 'off',
@@ -35,6 +36,8 @@ module.exports = defineConfig({
     'react/forbid-prop-types': 'off',
     'react/sort-comp': 'off',
     'react/react-in-jsx-scope': 'off',
+    // propTypes允许定义但不使用
+    'react/no-unused-prop-types': 'off',
     // 限制 jsx 每行一个表达式
     'react/jsx-one-expression-per-line': 'warn',
     'react/function-component-definition': 'off',
@@ -46,7 +49,8 @@ module.exports = defineConfig({
     // jsx > 紧跟着属性
     'react/jsx-closing-bracket-location': ['off', 'after-props'],
 
-    'react/self-closing-comp': 'warn',
+    // 禁止标签自动 close
+    'react/self-closing-comp': 'off',
     'react/jsx-key': 'warn'
   },
   settings: {
