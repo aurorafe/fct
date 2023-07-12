@@ -1,8 +1,10 @@
 module.exports = {
   root: true,
-  extends: ['stylelint-config-standard', 'stylelint-config-recommended-less'],
+  extends: ['stylelint-config-standard', './less.js'],
   plugins: ['stylelint-order'],
   rules: {
+    'alpha-value-notation': null,
+    'color-function-notation': 'legacy',
     // 关闭类名风格检查
     'selector-class-pattern': null,
     'selector-pseudo-class-no-unknown': [
@@ -18,15 +20,15 @@ module.exports = {
           'export',
           'import',
           'local',
-          'external'
-        ]
-      }
+          'external',
+        ],
+      },
     ],
     'selector-pseudo-element-no-unknown': [
       true,
       {
-        ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted']
-      }
+        ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted'],
+      },
     ],
     // 禁止空的 css 块
     'block-no-empty': true,
@@ -36,8 +38,8 @@ module.exports = {
     'function-no-unknown': [
       true,
       {
-        ignoreFunctions: ['if', 'v-bind', 'global']
-      }
+        ignoreFunctions: ['if', 'v-bind', 'global'],
+      },
     ],
     // 属性值的引号
     'selector-attribute-quotes': 'always',
@@ -56,27 +58,27 @@ module.exports = {
         'declarations',
         {
           type: 'at-rule',
-          name: 'supports'
+          name: 'supports',
         },
         {
           type: 'at-rule',
-          name: 'media'
+          name: 'media',
         },
-        'rules'
+        'rules',
       ],
-      { severity: 'warning' }
+      { severity: 'warning' },
     ],
 
     // 要求（如果可能）或禁止命名颜色
-    'color-named': 'never',
+    'color-named': null,
     // 在声明之前的空行
     'declaration-empty-line-before': null,
     'font-family-name-quotes': 'always-where-recommended',
     'font-weight-notation': [
       'numeric',
       {
-        ignore: ['relative']
-      }
+        ignore: ['relative'],
+      },
     ],
     'function-url-no-scheme-relative': true,
     // 禁止0长度的单位
@@ -84,8 +86,8 @@ module.exports = {
     'media-feature-name-no-unknown': [
       true,
       {
-        ignoreMediaFeatureNames: ['prefers-reduced-motion']
-      }
+        ignoreMediaFeatureNames: ['prefers-reduced-motion'],
+      },
     ],
     // 禁止媒体功能名的浏览器引擎前缀
     'media-feature-name-no-vendor-prefix': true,
@@ -112,8 +114,8 @@ module.exports = {
     'declaration-block-no-duplicate-properties': [
       true,
       {
-        ignore: ['consecutive-duplicates-with-different-values']
-      }
+        ignore: ['consecutive-duplicates-with-different-values'],
+      },
     ],
     'declaration-block-no-shorthand-property-overrides': true,
     'font-family-no-duplicate-names': true,
@@ -127,16 +129,16 @@ module.exports = {
       true,
       {
         ignoreProperties: ['composes', 'compose-with'],
-        ignoreSelectors: [':export', /^:import/]
-      }
+        ignoreSelectors: [':export', /^:import/],
+      },
     ],
     'string-no-newline': true,
     'at-rule-empty-line-before': [
       'always',
       {
         except: ['blockless-after-same-name-blockless', 'first-nested'],
-        ignore: ['after-comment']
-      }
+        ignore: ['after-comment'],
+      },
     ],
     // 指定@规则名的大小写
     'at-rule-name-case': 'lower',
@@ -155,16 +157,16 @@ module.exports = {
       'always',
       {
         except: ['first-nested'],
-        ignore: ['stylelint-commands']
-      }
+        ignore: ['stylelint-commands'],
+      },
     ],
     'comment-whitespace-inside': 'always',
     'custom-property-empty-line-before': [
       'always',
       {
         except: ['after-custom-property', 'first-nested'],
-        ignore: ['after-comment', 'inside-single-line-block']
-      }
+        ignore: ['after-comment', 'inside-single-line-block'],
+      },
     ],
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
@@ -204,8 +206,8 @@ module.exports = {
       'always-multi-line',
       {
         except: ['first-nested'],
-        ignore: ['after-comment']
-      }
+        ignore: ['after-comment'],
+      },
     ],
     'selector-attribute-brackets-space-inside': 'never',
     'selector-attribute-operator-space-after': 'never',
@@ -224,16 +226,16 @@ module.exports = {
     'value-list-comma-newline-after': 'always-multi-line',
     'value-list-comma-space-after': 'always-single-line',
     'value-list-comma-space-before': 'never',
-    'value-list-max-empty-lines': 0
+    'value-list-max-empty-lines': 0,
   },
   overrides: [
     {
       files: ['**/*.(html|ejs)'],
-      customSyntax: 'postcss-html'
+      customSyntax: 'postcss-html',
     },
     {
       files: ['**/*.(less|css)'],
-      customSyntax: 'postcss-less'
+      customSyntax: 'postcss-less',
     },
     {
       files: '**/*.scss',
@@ -244,18 +246,18 @@ module.exports = {
         'scss/at-rule-no-unknown': [
           true,
           {
-            ignoreAtRules: ['value']
-          }
+            ignoreAtRules: ['value'],
+          },
         ],
         'function-no-unknown': null,
         'scss/function-no-unknown': [
           true,
           {
-            ignoreFunctions: ['global']
-          }
-        ]
-      }
-    }
+            ignoreFunctions: ['global'],
+          },
+        ],
+      },
+    },
   ],
-  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts']
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts'],
 };
