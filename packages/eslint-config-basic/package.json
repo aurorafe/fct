@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "description": "aurorafe eslint config",
   "license": "MIT",
+  "files": [
+    "index.js",
+    "prettier.js",
+    "base.js",
+    "package.json",
+    "CHANGELOG.md",
+    "rules"
+  ],
   "exports": {
-    ".": "./lib/index.js",
-    "./base": "./lib/base.js",
-    "./prettier": "./lib/prettier.js",
-    "./rules": "./lib/rules/index.js"
+    ".": "./index.js",
+    "./base": "./base.js",
+    "./prettier": "./prettier.js",
+    "./rules": "./rules/index.js"
   },
-  "main": "lib/index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/aurorafe/ftc.git",

@@ -137,7 +137,7 @@ module.exports = {
     'constructor-super': 'error',
 
     // 数组和对象键值对最后一个逗号
-    'comma-dangle': ['error', 'only-multiline'],
+    'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': [
       'error',
       {
@@ -261,8 +261,8 @@ module.exports = {
     // 允许导入时不带后缀
     'import/extensions': 'off',
     'import/no-duplicates': 'warn',
-    // 不区分是否在 despendencies
-    // 'import/no-extraneous-dependencies': 0,
+    // 不区分是否在 dependencies
+    'import/no-extraneous-dependencies': 'off',
     'import/no-import-module-exports': 'off',
     'implicit-arrow-linebreak': 'off',
 
@@ -312,8 +312,12 @@ module.exports = {
     ],
     // 允许直接 return await
     'no-return-await': 'off',
+    // 允许在循环中使用 await
+    'no-await-in-loop': 'off',
     // 不必在使用前定义函数
     'no-use-before-define': 'off',
-    'unicorn/prevent-abbreviations': 'off',
+    // 允许嵌套的三元表达式
+    'no-nested-ternary': 'off',
+    'unicorn/prevent-abbreviations': 'off'
   }
 };

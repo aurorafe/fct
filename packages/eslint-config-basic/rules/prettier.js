@@ -6,7 +6,7 @@ module.exports = {
   useTabs: false, // 使用空格代替tab缩进
   singleQuote: true, // 单引号
   semi: true, // 句末使用分号
-  trailingComma: 'none', // 是否使用尾逗号，有三个可选值"<none|es5|all>"
+  trailingComma: 'all', // 是否使用尾逗号，有三个可选值"<none|es5|all>"
   arrowParens: 'always', // (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
   bracketSpacing: true, // 在对象前后添加空格: { foo: bar }
   quoteProps: 'as-needed', // 仅在必需时为对象的key添加引号
