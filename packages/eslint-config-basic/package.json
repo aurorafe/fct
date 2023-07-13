@@ -1,6 +1,6 @@
 {
   "name": "@aurorafe/eslint-config-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "aurorafe eslint config",
   "license": "MIT",
   "files": [
