@@ -2,64 +2,64 @@ module.exports = {
   types: [
     {
       value: '🎉 init',
-      name: 'init:    初始化'
+      name: 'init:    初始化',
     },
     {
       value: '👷 ci',
-      name: 'ci:    ci相关更新'
+      name: 'ci:    ci相关更新',
     },
     {
       value: '🎨 ui',
-      name: 'ui:    更新UI'
+      name: 'ui:    更新UI',
     },
     {
       value: '🔧 chore',
-      name: 'chore:    变更配置文件'
+      name: 'chore:    变更配置文件',
     },
     {
       value: '✨ feat',
-      name: 'feat:    增加新功能'
+      name: 'feat:    增加新功能',
     },
     {
       value: '📝 docs',
-      name: 'docs:    修改文档'
+      name: 'docs:    修改文档',
     },
     {
       value: '🐛 fix',
-      name: 'fix:    修复Bug'
+      name: 'fix:    修复Bug',
     },
     {
       value: '⚡️ pref',
-      name: 'perf:    性能优化'
+      name: 'perf:    性能优化',
     },
     {
       value: '🚑 update',
-      name: 'update:    更新'
+      name: 'update:    更新',
     },
     {
       value: '♻️ refactor',
-      name: 'refactor:    代码重构'
+      name: 'refactor:    代码重构',
     },
     {
       value: '⏪ revert',
-      name: 'revert:    代码回退'
+      name: 'revert:    代码回退',
     },
     {
       value: '💄 style',
-      name: 'style:    代码格式改变'
+      name: 'style:    代码格式改变',
     },
     {
       value: '📇 wip',
-      name: 'wip:    开发中'
+      name: 'wip:    开发中',
     },
     {
       value: '✅ test',
-      name: 'test:    添加测试'
+      name: 'test:    添加测试',
     },
     {
       value: '📦️ release',
-      name: 'release:    发布'
-    }
+      name: 'release:    发布',
+    },
   ],
   scopes: [],
   messages: {
@@ -71,10 +71,10 @@ module.exports = {
     body: '详细说明，使用"|"换行(可选)：\n',
     breaking: '非兼容性说明 (可选):\n',
     footer: '关联关闭的issue，例如：#31, #34(可选):\n',
-    confirmCommit: '确定提交?(yes/no)'
+    confirmCommit: '确定提交?(yes/no)',
   },
   allowCustomScopes: true,
   allowBreakingChanges: ['特性', '修复'],
   // limit subject length
-  subjectLimit: 150
+  subjectLimit: 150,
 };
