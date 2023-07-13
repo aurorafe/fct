@@ -9,26 +9,26 @@ module.exports = defineConfig({
       parser: 'vue-eslint-parser',
       parserOptions: {
         parser: '@typescript-eslint/parser',
-        extraFileExtensions: ['.vue']
+        extraFileExtensions: ['.vue'],
       },
       rules: {
         'no-undef': 'off',
-        'vue/html-self-closing': 'off'
-      }
+        'vue/html-self-closing': 'off',
+      },
     },
     {
       files: ['*.html'],
       rules: {
-        'vue/comment-directive': 'off'
-      }
-    }
+        'vue/comment-directive': 'off',
+      },
+    },
   ],
   rules: {
     'vue/multi-word-component-names': [
       'off',
       {
-        ignores: ['index']
-      }
+        ignores: ['index'],
+      },
     ],
     'vue/html-self-closing': 'off',
     'vue/no-v-model-argument': 'off',
@@ -36,12 +36,12 @@ module.exports = defineConfig({
       'error',
       {
         singleline: 'ignore',
-        multiline: 'below'
-      }
+        multiline: 'below',
+      },
     ],
     'vue/singleline-html-element-content-newline': 'off',
     'vue/multiline-html-element-content-newline': 'off',
     'vue/component-definition-name-casing': ['error', 'PascalCase'],
-    'vue/no-v-html': 'off'
-  }
+    'vue/no-v-html': 'off',
+  },
 });

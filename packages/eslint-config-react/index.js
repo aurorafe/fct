@@ -11,7 +11,7 @@ module.exports = defineConfig({
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'airbnb'
+    'airbnb',
   ],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   plugins: ['react', 'jest', 'react-hooks', 'eslint-plugin-import'],
@@ -51,23 +51,23 @@ module.exports = defineConfig({
 
     // 禁止标签自动 close
     'react/self-closing-comp': 'off',
-    'react/jsx-key': 'warn'
+    'react/jsx-key': 'warn',
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: isTsProject ? ['.js', '.jsx', '.ts', '.tsx', '.d.ts'] : ['.js', '.jsx']
-      }
+        extensions: isTsProject ? ['.js', '.jsx', '.ts', '.tsx', '.d.ts'] : ['.js', '.jsx'],
+      },
     },
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts']
+      '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts'],
     },
     'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx', '.d.ts'],
     'import/external-module-folders': ['node_modules', 'node_modules/@types'],
     polyfills: ['fetch', 'Promise', 'URL', 'object-assign'],
     react: {
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
   overrides: isTsProject
     ? [
@@ -77,10 +77,10 @@ module.exports = defineConfig({
           rules: {
             // @link https://github.com/typescript-eslint/typescript-eslint/blob/main/docs/linting/TROUBLESHOOTING.md
             'no-undef': 'off',
-            'prettier/prettier': 'warn' // 不符合prettier规范的进行警告
+            'prettier/prettier': 'warn', // 不符合prettier规范的进行警告
           },
-          extends: ['@aurorafe/eslint-config-ts']
-        }
+          extends: ['@aurorafe/eslint-config-ts'],
+        },
       ]
-    : []
+    : [],
 });

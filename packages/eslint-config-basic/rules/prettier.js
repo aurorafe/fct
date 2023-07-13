@@ -17,5 +17,5 @@ module.exports = {
   vueIndentScriptAndStyle: true, // Vue文件的script标签和style标签的代码是否缩进
   htmlWhitespaceSensitivity: 'ignore', // 指定全局空白的敏感度，可选值 <css|strict|ignore>
   embeddedLanguageFormatting: 'auto', // 格式化嵌入的内容
-  singleAttributePerLine: false // Html, vue, jsx 中每个属性占一行
+  singleAttributePerLine: false, // Html, vue, jsx 中每个属性占一行
 };

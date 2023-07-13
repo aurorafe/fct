@@ -1,6 +1,6 @@
 {
   "name": "@aurorafe/tsconfig",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "aurorafe group ts base config",
   "main": "index.js",
   "scripts": {
