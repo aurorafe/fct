@@ -24,6 +24,7 @@ module.exports = defineConfig({
     },
   ],
   rules: {
+    'vue/attributes-order': 'off',
     'vue/multi-word-component-names': [
       'off',
       {
@@ -43,5 +44,17 @@ module.exports = defineConfig({
     'vue/multiline-html-element-content-newline': 'off',
     'vue/component-definition-name-casing': ['error', 'PascalCase'],
     'vue/no-v-html': 'off',
-  },
+    'vue/require-default-prop': 'off',
+    'vue/no-setup-props-destructure': 'off',
+
+    'vue/no-mutating-props': 'off',
+    'vue/v-on-event-hyphenation': [
+      'warn',
+      'always',
+      {
+        autofix: true
+      }
+    ],
+    'vue/script-setup-uses-vars': 'error'
+  }
 });

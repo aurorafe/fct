@@ -19,13 +19,13 @@
   "dependencies": {
     "@aurorafe/eslint-config-ts": "workspace:*",
     "@vue/eslint-config-airbnb": "^7.0.0",
-    "eslint-define-config": "^1.21.0",
-    "eslint-plugin-vue": "^9.15.0"
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-vue": "^9.22.0"
   },
   "peerDependencies": {
-    "eslint": ">=8.0.0"
+    "eslint": ">=8.56.0"
   },
   "devDependencies": {
-    "eslint": "^8.30.0"
+    "eslint": "^8.57.0"
   }
 }

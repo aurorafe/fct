@@ -34,14 +34,8 @@ module.exports = {
     'block-no-empty': true,
     // 要求或禁止 URL 的引号 "always(必须加上引号)"|"never(没有引号)"
     'function-url-quotes': 'always',
-    // 允许使用 less 的 if 函数
-    'function-no-unknown': [
-      true,
-      {
-        ignoreFunctions: ['if', 'v-bind', 'global'],
-      },
-    ],
-    // 属性值的引号
+    // 允许使用 less 的函数
+    'function-no-unknown': null,
     'selector-attribute-quotes': 'always',
     'font-family-no-missing-generic-family-keyword': null,
     'unit-no-unknown': [true, { ignoreUnits: ['rpx'] }],

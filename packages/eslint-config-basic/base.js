@@ -5,15 +5,15 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2022,
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    sourceType: 'module'
+    sourceType: 'module',
   },
   env: {
     browser: true,
     node: true,
     commonjs: true,
-    es2022: true
+    es2022: true,
   },
   extends: ['eslint:recommended', 'plugin:import/recommended', 'plugin:jsonc/recommended-with-jsonc'],
   plugins: ['promise', 'html'],
@@ -32,37 +32,37 @@ module.exports = {
     'LICENSE*',
     '__snapshots__',
     '!.vitepress',
-    '!.vscode'
+    '!.vscode',
   ],
   settings: {
     'import/resolver': {
       alias: {
         map: [
           ['~', '.'],
-          ['@', './src']
+          ['@', './src'],
         ],
-        extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', 'mts', '.d.ts']
-      }
-    }
+        extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx', 'mts', '.d.ts'],
+      },
+    },
   },
   overrides: [
     {
       files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
       env: {
-        jest: true
-      }
+        jest: true,
+      },
     },
     {
       files: '*.html',
       parser: '@html-eslint/parser',
       rules: {
         'prettier/prettier': ['error', { parser: 'html', ...prettierRules }],
-        'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }]
-      }
+        'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
+      },
     },
     {
       files: ['*.json', '*.json5', '*.jsonc'],
-      parser: 'jsonc-eslint-parser'
+      parser: 'jsonc-eslint-parser',
     },
     {
       files: ['package.json'],
@@ -72,19 +72,19 @@ module.exports = {
           'error',
           {
             pathPattern: '^$',
-            order: ['name', 'displayName', 'type', 'version', 'private']
+            order: ['name', 'displayName', 'type', 'version', 'private'],
           },
           {
             pathPattern: '^(?:dev|peer|optional|bundled)?[Dd]ependencies$',
-            order: { type: 'asc' }
+            order: { type: 'asc' },
           },
           {
             pathPattern: '^exports.*$',
-            order: ['types', 'require', 'import']
-          }
-        ]
-      }
-    }
+            order: ['types', 'require', 'import'],
+          },
+        ],
+      },
+    },
   ],
   rules: {
     // global config
@@ -94,16 +94,16 @@ module.exports = {
     camelcase: [
       'off',
       {
-        properties: 'always'
-      }
+        properties: 'always',
+      },
     ],
     quotes: [
       'error',
       'single',
       {
         avoidEscape: true,
-        allowTemplateLiterals: true
-      }
+        allowTemplateLiterals: true,
+      },
     ],
     // 语句末尾是否使用分号，这里我们先关闭
     semi: 'off',
@@ -111,8 +111,8 @@ module.exports = {
       'off',
       {
         before: false,
-        after: true
-      }
+        after: true,
+      },
     ],
     'func-names': 'off',
     // 箭头函数的前后空格
@@ -120,8 +120,8 @@ module.exports = {
       'error',
       {
         before: true,
-        after: true
-      }
+        after: true,
+      },
     ],
     // 箭头函数直接返回的时候不需要
     'arrow-body-style': ['error', 'as-needed'],
@@ -142,8 +142,8 @@ module.exports = {
       'error',
       {
         before: false,
-        after: true
-      }
+        after: true,
+      },
     ],
     'comma-style': ['error', 'last'],
     curly: ['error', 'multi-line'],
@@ -154,15 +154,15 @@ module.exports = {
       'error',
       '1tbs',
       {
-        allowSingleLine: true
-      }
+        allowSingleLine: true,
+      },
     ],
     // 禁止一次定义多个变量
     'one-var': [
       'error',
       {
-        initialized: 'never'
-      }
+        initialized: 'never',
+      },
     ],
     'operator-linebreak': [
       'error',
@@ -170,9 +170,9 @@ module.exports = {
       {
         overrides: {
           '?': 'before',
-          ':': 'before'
-        }
-      }
+          ':': 'before',
+        },
+      },
     ],
     yoda: ['error', 'never'],
     // 使用 for in 时不需要 if 判断
@@ -181,23 +181,23 @@ module.exports = {
       'off',
       {
         before: true,
-        after: true
-      }
+        after: true,
+      },
     ],
     'handle-callback-err': ['off', '^(err|error)$'],
     'key-spacing': [
       'off',
       {
         beforeColon: false,
-        afterColon: true
-      }
+        afterColon: true,
+      },
     ],
     'keyword-spacing': [
       'off',
       {
         before: true,
-        after: true
-      }
+        after: true,
+      },
     ],
     // allow shadow var
     'no-shadow': 'off',
@@ -205,8 +205,8 @@ module.exports = {
       'off',
       {
         newIsCap: true,
-        capIsNew: false
-      }
+        capIsNew: false,
+      },
     ],
     // 允许内置对象原型修改
     'no-prototype-builtins': 'off',
@@ -220,15 +220,15 @@ module.exports = {
       'off',
       {
         words: true,
-        nonwords: false
-      }
+        nonwords: false,
+      },
     ],
     'spaced-comment': [
       'off',
       'always',
       {
-        markers: ['global', 'globals', 'eslint', 'eslint-disable', '*package', '!', ',']
-      }
+        markers: ['global', 'globals', 'eslint', 'eslint-disable', '*package', '!', ','],
+      },
     ],
     // 允许使用 arguments
     'prefer-rest-params': 'off',
@@ -241,8 +241,8 @@ module.exports = {
       'off',
       'always',
       {
-        objectsInObjects: false
-      }
+        objectsInObjects: false,
+      },
     ],
     'array-bracket-spacing': ['off', 'never'],
 
@@ -293,22 +293,22 @@ module.exports = {
       'off',
       {
         allowLoop: false,
-        allowSwitch: false
-      }
+        allowSwitch: false,
+      },
     ],
     'no-multiple-empty-lines': [
       'off',
       {
-        max: 1
-      }
+        max: 1,
+      },
     ],
     // 函数可以没有返回值
     'no-return-assign': ['off', 'except-parens'],
     'no-unneeded-ternary': [
       'off',
       {
-        defaultAssignment: false
-      }
+        defaultAssignment: false,
+      },
     ],
     // 允许直接 return await
     'no-return-await': 'off',
@@ -318,6 +318,6 @@ module.exports = {
     'no-use-before-define': 'off',
     // 允许嵌套的三元表达式
     'no-nested-ternary': 'off',
-    'unicorn/prevent-abbreviations': 'off'
-  }
+    'unicorn/prevent-abbreviations': 'off',
+  },
 };
