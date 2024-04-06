@@ -1,6 +1,6 @@
 {
   "name": "@aurorafe/eslint-config-react",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "aurorafe eslint config presets with react",
   "license": "MIT",
   "main": "index.js",

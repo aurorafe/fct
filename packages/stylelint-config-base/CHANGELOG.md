@@ -1,5 +1,11 @@
 # @aurorafe/stylelint-config-base
 
+## 1.1.0
+
+### Minor Changes
+
+- [`62e2123`](https://github.com/aurorafe/ftc/commit/62e2123284c80fc2bbbd1af11a18e99fac509444) Thanks [@sakitam-fdd](https://github.com/sakitam-fdd)! - bump deps
+
 ## 1.0.1
 
 ### Patch Changes
